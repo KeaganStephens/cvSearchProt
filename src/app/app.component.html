@@ -1,1 +1,5 @@
-Keagan en Divan is die best ooit.
+<input placeholder="Search" type='text' (keyup)="search($event)">
+
+<ng-container *ngFor="let person of displayData">
+  <p>{{ person.name }}</p>
+</ng-container>
