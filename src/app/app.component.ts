@@ -15,6 +15,8 @@ export class AppComponent {
   search(text : any){
     this.value = text.target.value.toLowerCase()
     console.log("hello")
+    this.displayData = []
+
     for(let i in this.students_database){
       if(this.value in this.students_database[i].subjects){
         
@@ -24,6 +26,7 @@ export class AppComponent {
             age: this.students_database[i].age })
       }
     }
+    
   }
 
   students_database = [
