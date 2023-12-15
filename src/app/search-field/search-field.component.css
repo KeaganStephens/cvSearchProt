@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    /* border: solid 1px red; */
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSearchContainer{
+    border-color: blue;
+    width: 100vw;
+    height: 14vh;
+}
+
+.toggleView{
+    border-radius: 3px;
+    background: #283640;
+    color: #fff;
+    /* border-color: plum; */
+    height: 5.6vh;
+    width: 9.2vw;
+    /* margin: 4.48vh 0 0 3.2vw; */
+    margin: 0 0 0 3.2vw;
+}
+
+.searchBarDiv{
+    position: relative;
+    /* margin: 4.48vh 0 0 0.8vw; */
+    margin: 0 0 0 0.8vw;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    margin-top: 1.6vh;
+    margin-left: 1.2vw;
+    color: #283640;
+}
+
+.searchInput{
+    border-radius: 3px 0px 0px 3px;
+    padding-left: 3.92vw;
+    background: #F2F2F2;
+    color: #283640;
+    height: 5.6vh;
+    width: 68.4vw;
+}
+
+.searchInput:focus {
+    outline-color: #283640;
+}
+
+
+.searchInput::placeholder {
+    /* padding-left: 1.2vw; */
+    color: #283640;
+}
+
+/* textarea.searchInput::placeholder {
+    padding-left: 1.2vw; 
+} */
+
+.searchSubmitButton{
+    border-radius: 0px 3px 3px 0px;
+    background: #283640;
+    color: #fff;
+    height: 5.6vh;
+    width: 9.2vw;
+}
+
+.filterDataButton{
+    background: #283640;
+    border-color: green;
+    border-radius: 3px;
+    height: 5.6vh;
+    width: 4vw;
+    /* margin: 4.48vh 0 0 1.76vw; */
+    margin: 0 0 0 1.76vw;
+}
+
+.fa-arrow-down-wide-short{
+    /* color: #283640; */
+    color: #F2F2F2;
+}
+
+.fa-grip{
+    margin-right: 0.2vw;
+}
+
+.subSearchContainer{
+    height: 5.1vh;
+    width: 100vw;
+    border-top: 2px solid #F2F2F2;
+    background: #FFF;
+    border-bottom: 0px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.infoTotalDisplay{
+    border-color: rgb(255, 164, 164);
+    font-size: 15px;
+}
+
+.selectTotalInfoDisplay{
+    border-color: rgb(61, 164, 61);
+    height: 2.9vh;
+    width: 9.4vw;
+}
+
+.infoTotalDisplaySelected{
+    border-color: rgb(255, 164, 164);
+    font-size: 15px;
+}

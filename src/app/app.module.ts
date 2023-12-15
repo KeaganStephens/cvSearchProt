@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { Prototype1Component } from './prototype1/prototype1.component';
+import { SearchFieldComponent } from './search-field/search-field.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Prototype1Component
+    Prototype1Component,
+    SearchFieldComponent
   ],
   imports: [
     BrowserModule,

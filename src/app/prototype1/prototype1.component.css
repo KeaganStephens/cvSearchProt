@@ -35,7 +35,7 @@
   }
     
   .imgR{
-    border: solid 2px transparent;
+    /* border: solid 2px transparent; */
     border-radius: 9px;
     height: 100%;
     width: 100%;
