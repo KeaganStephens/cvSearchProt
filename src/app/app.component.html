@@ -1,7 +1,6 @@
-<app-search-field></app-search-field>
-<!-- <input placeholder="Search" type='text' (keyup)="search($event)"> -->
-<app-prototype1></app-prototype1>
-<ng-container *ngFor="let person of displayData">
-  <p>{{ person.name }}</p>
-  <img src="{{ person.cvImg }}" alt="{{ person.name }} Image" style="height: 20vh;">
-</ng-container>
+<div class="MAINCONTAINER">
+<app-search-field (input)="search($event)"></app-search-field>
+<app-prototype1 [list]="displayData"></app-prototype1>
+</div>
+
+<!-- Rest of your code -->

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-search-field',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-field.component.css']
 })
 export class SearchFieldComponent {
+  @Output() searchInput = new EventEmitter<string>();
 
+  search(event: any) {
+    const inputValue = event.target.value.toLowerCase();
+    this.searchInput.emit(inputValue);
+  }
 }
+

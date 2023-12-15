@@ -11,19 +11,11 @@ export class AppComponent {
   value = '';
   displayData: { name: string, cvImg: string}[] = [];
 
-  search(text: any) {
-    this.value = text.target.value.toLowerCase();
-    this.displayData = [];
-
-    for (let i = 0; i < this.students_database.length; i++) {
-      // Check if the entered value is a substring of the lowercase name
-      if (this.students_database[i].name.toLowerCase().includes(this.value)) {
-        this.displayData.push({
-          name: this.students_database[i].name,
-          cvImg: this.students_database[i].cvImg
-        });
-      }
-    }
+  search(event: any) {
+    this.value = event.target.value.toLowerCase();
+    this.displayData = this.students_database.filter(
+      (student) => student.name.toLowerCase().includes(this.value)
+    );
   }
 
   students_database = [
