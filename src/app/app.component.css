@@ -2,3 +2,27 @@
 {
     background: #F2F2F2;
 }
+
+.disabled{
+    display: none; /* Hide the element */
+}
+
+/* CSS for screens smaller than 927px */
+@media screen and (max-width: 927px) {
+    /* Your styles for smaller screens go here */
+    .MAINCONTAINER {
+        display: none; /* Hide the element */
+        pointer-events: none; /* Disable pointer events on the element */
+    }
+
+    .disabled{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+  

@@ -1,26 +1,29 @@
 <div style="position: fixed; ">
     <div class="mainSearchContainer flex ">
         <div class="subCenterContainer flex">
-            <button class="toggleView flex"><i class="fa-solid fa-grip"></i><p>View</p></button>
+            <button class="toggleView flex lighter-shade underDevelopment" #underDevelopmentButtons (click)="handleClick(underDevelopmentButtons)"><i class="fa-solid fa-grip"></i><p>View</p></button>
             <div class="searchBarDiv flex">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input placeholder="Search" type='text' class="searchInput" (keyup)="search($event)">
-                <button class="searchSubmitButton">Search</button>
+                <button class="searchSubmitButton lighter-shade underDevelopment" #underDevelopmentButtons (click)="handleClick(underDevelopmentButtons)">Search</button>
             </div>
-            <button class="filterDataButton"><i class="fa-solid fa-arrow-down-wide-short"></i></button>
+            <button class="filterDataButton lighter-shade  underDevelopment" #underDevelopmentButtons (click)="handleClick(underDevelopmentButtons)"><i class="fa-solid fa-arrow-down-wide-short"></i></button>
         </div>
     </div>
     <div class="subSearchContainer flex">
-        <p class="infoTotalDisplay">reading 30 of 50</p>
-        <div class="selectTotalInfoDisplay flex">
-            <p class="infoTotalDisplaySelected">show 30</p>
-            <button class="selectTotalDisplayButton">^</button>
+        <div class="infoContainer flex">
+            <p class="infoTotalDisplay">Reading 50 of 50</p>
+            <div class="selectTotalInfoDisplay flex  underDevelopment" #underDevelopmentButtons (click)="handleClick(underDevelopmentButtons)">
+                <p class="infoTotalDisplaySelected">Show 30</p>
+                <button class="selectTotalDisplayButton">^</button>
+            </div>
         </div>
         <div class="action-buttons-container Flex">
-            <button class="import-button">Import</button>
-            <button class="export-button">Export</button>
-            <button class="new-button">New</button>
+            <button class="action-button underDevelopment" #underDevelopmentButtons (click)="handleClick(underDevelopmentButtons)">Import</button>
+            <button class="action-button underDevelopment" #underDevelopmentButtons (click)="handleClick(underDevelopmentButtons)">Export</button>
+            <button class="action-button underDevelopment" #underDevelopmentButtons (click)="handleClick(underDevelopmentButtons)">New</button>
           </div>
     </div>
 </div>
 <div class="placeholderDiv"></div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

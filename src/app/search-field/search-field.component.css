@@ -18,6 +18,15 @@
     align-items: center;
 }
 
+.lighter-shade {
+    background-color: #283640;
+    transition: background-color 0.3s ease;
+}
+
+.lighter-shade:active {
+    background-color: #405060; /* Change this to the desired lighter shade */
+}
+
 .mainSearchContainer{
     border-color: #fff;
     background: #fff;
@@ -93,7 +102,7 @@
     height: 5.6vh;
     width: 4vw;
     /* margin: 4.48vh 0 0 1.76vw; */
-    margin: 0 0 0 1.76vw;
+    margin: 0 0 0 0.8vw /*1.76vw;*/
 }
 
 .fa-arrow-down-wide-short{
@@ -113,6 +122,7 @@
     border-bottom: 0px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 8px;
+    position: relative;
 }
 
 .infoTotalDisplay{
@@ -129,4 +139,57 @@
 .infoTotalDisplaySelected{
     border-color: rgb(255, 164, 164);
     font-size: 15px;
+}
+
+.selectTotalInfoDisplay{
+    border: solid #283640 1px;
+    border-radius: 3px;
+    background: transparent;
+    color: #283640;
+    height: 2.9vh;
+    width: auto;
+    padding: 3px;
+    font-size: 10px;
+    margin: 0.84vw;
+}
+
+.infoTotalDisplaySelected{
+    font-size: 10px;
+}
+
+.action-button{
+    border: solid #283640 1px;
+    padding: 3px;
+    border-radius: 3px;
+    background: transparent;
+    color: #283640;
+    height: 2.9vh;
+    width: 4.4vw;
+    font-size: 10px;
+    margin: 0.84vw;
+}
+
+.selectTotalDisplayButton{
+    border: solid #283640 1px;
+    padding: 3px;
+    border-radius: 3px;
+    background: transparent;
+    color: #283640;
+    height: auto;
+    width: auto;
+    font-size: 10px;
+    margin-left: 0.5vw;
+}
+
+.action-buttons-container{
+    position: absolute;
+    right: 0;
+    margin-right: 3.36vw;
+
+}
+
+.infoContainer{
+    position: absolute;
+    left:0;
+    margin-left: 3.36vw;
 }
